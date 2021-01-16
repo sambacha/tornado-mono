@@ -9,13 +9,14 @@
 * ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 */
 
-pragma solidity 0.5.17;
+// SPDX-License-Identifier: MIT
+pragma solidity >0.6.0 <0.8.0;
 
 library Hasher {
   function MiMCSponge(uint256 in_xL, uint256 in_xR) public pure returns (uint256 xL, uint256 xR);
 }
 
-contract MerkleTreeWithHistory {
+abstract contract MerkleTreeWithHistory {
   uint256 public constant FIELD_SIZE = 21888242871839275222246405745257275088548364400416034343698204186575808495617;
   uint256 public constant ZERO_VALUE = 21663839004416932945382355908790599225266501822907911457504978515578255421292; // = keccak256("tornado") % FIELD_SIZE
 
@@ -30,7 +31,7 @@ contract MerkleTreeWithHistory {
   uint32 public constant ROOT_HISTORY_SIZE = 100;
   bytes32[ROOT_HISTORY_SIZE] public roots;
 
-  constructor(uint32 _treeLevels) public {
+  constructor(uint32 _treeLevels)  {
     require(_treeLevels > 0, "_treeLevels should be greater than zero");
     require(_treeLevels < 32, "_treeLevels should be less than 32");
     levels = _treeLevels;

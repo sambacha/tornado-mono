@@ -5,7 +5,7 @@ import '@nomiclabs/hardhat-ethers'
 import '@nomiclabs/hardhat-waffle'
 
 const config: HardhatUserConfig = {
-  solidity: "0.5.17",
+  solidity: "0.7.3",
 };
 
 export default config

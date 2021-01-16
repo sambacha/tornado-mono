@@ -9,16 +9,17 @@
 * ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 */
 
-pragma solidity 0.5.17;
+// SPDX-License-Identifier: MIT
+pragma solidity >0.6.0 <0.8.0;
 
 import "./MerkleTreeWithHistory.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
-contract IVerifier {
-  function verifyProof(bytes memory _proof, uint256[6] memory _input) public returns(bool);
+abstract contract IVerifier {
+  function verifyProof(bytes memory _proof, uint256[6] memory _input) virtual public returns(bool);
 }
 
-contract Tornado is MerkleTreeWithHistory, ReentrancyGuard {
+abstract contract Tornado is MerkleTreeWithHistory, ReentrancyGuard {
   uint256 public denomination;
   mapping(bytes32 => bool) public nullifierHashes;
   // we store all commitments just to prevent accidental deposits with the same commitment
@@ -48,7 +49,7 @@ contract Tornado is MerkleTreeWithHistory, ReentrancyGuard {
     uint256 _denomination,
     uint32 _merkleTreeHeight,
     address _operator
-  ) MerkleTreeWithHistory(_merkleTreeHeight) public {
+  ) MerkleTreeWithHistory(_merkleTreeHeight) {
     require(_denomination > 0, "denomination should be greater than 0");
     verifier = _verifier;
     operator = _operator;
@@ -70,7 +71,7 @@ contract Tornado is MerkleTreeWithHistory, ReentrancyGuard {
   }
 
   /** @dev this function is defined in a child contract */
-  function _processDeposit() internal;
+  function _processDeposit() virtual internal;
 
   /**
     @dev Withdraw a deposit from the contract. `proof` is a zkSNARK proof data, and input is an array of circuit public inputs
@@ -92,7 +93,7 @@ contract Tornado is MerkleTreeWithHistory, ReentrancyGuard {
   }
 
   /** @dev this function is defined in a child contract */
-  function _processWithdraw(address payable _recipient, address payable _relayer, uint256 _fee, uint256 _refund) internal;
+  function _processWithdraw(address payable _recipient, address payable _relayer, uint256 _fee, uint256 _refund) virtual internal;
 
   /** @dev whether a note is already spent */
   function isSpent(bytes32 _nullifierHash) public view returns(bool) {
