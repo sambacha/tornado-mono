@@ -40,7 +40,7 @@ contract ERC20Tornado is Tornado {
     }
 
     if (_refund > 0) {
-      (bool success, ) = _recipient.call.value(_refund)("");
+      (bool success, ) = _recipient.call{value: _refund}("");
       if (!success) {
         // let's return _refund back to the relayer
         _relayer.transfer(_refund);

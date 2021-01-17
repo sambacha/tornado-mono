@@ -13,7 +13,7 @@
 pragma solidity >0.6.0 <0.8.0;
 
 import "./MerkleTreeWithHistory.sol";
-import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
+import "./OZ/contracts/utils/ReentrancyGuard.sol";
 
 abstract contract IVerifier {
   function verifyProof(bytes memory _proof, uint256[6] memory _input) virtual public returns(bool);
