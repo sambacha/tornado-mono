@@ -1,86 +1,68 @@
 {
-	"anonymity-mining": {
-
-		"tasks": {
-			"build": {
-				"runner": "npx",
-				"input": "{{projectDir}}/src",
-				"output": "{{projectDir}}/dist",
-				"skipWatch": false,
-				"options": {
-
-				}
-			}
-		}
-	},
-	"relayer": {
-
-		"tasks": {
-			"build": {
-				"runner": "npx",
-				"input": "{{projectDir}}/src",
-				"output": "{{projectDir}}/dist",
-				"skipWatch": false,
-				"options": {
-
-				}
-			}
-		}
-	},
-	"root-updater": {
-
-		"tasks": {
-			"build": {
-				"runner": "npx",
-				"input": "{{projectDir}}/src",
-				"output": "{{projectDir}}/dist",
-				"skipWatch": false,
-				"options": {
-
-				}
-			}
-		}
-	},
-	"tornado-deploy": {
-
-		"tasks": {
-			"build": {
-				"runner": "npx",
-				"input": "{{projectDir}}/src",
-				"output": "{{projectDir}}/dist",
-				"skipWatch": false,
-				"options": {
-
-				}
-			}
-		},
-		"tornado-deploy": {
-
-			"tasks": {
-				"build": {
-					"runner": "npx",
-					"input": "{{projectDir}}/src",
-					"output": "{{projectDir}}/dist",
-					"skipWatch": false,
-					"options": {
-
-					}
-				}
-			}
-		},
-		"trees-proposal": {
-
-			"tasks": {
-				"build": {
-					"runner": "npx",
-					"input": "{{projectDir}}/src",
-					"output": "{{projectDir}}/dist",
-					"skipWatch": false,
-					"options": {
-
-					}
-				}
-			}
-		}
-	}
+  "anonymity-mining": {
+    "tasks": {
+      "build": {
+        "runner": "npx",
+        "input": "{{projectDir}}/src",
+        "output": "{{projectDir}}/dist",
+        "skipWatch": false,
+        "options": {}
+      }
+    }
+  },
+  "relayer": {
+    "tasks": {
+      "build": {
+        "runner": "npx",
+        "input": "{{projectDir}}/src",
+        "output": "{{projectDir}}/dist",
+        "skipWatch": false,
+        "options": {}
+      }
+    }
+  },
+  "root-updater": {
+    "tasks": {
+      "build": {
+        "runner": "npx",
+        "input": "{{projectDir}}/src",
+        "output": "{{projectDir}}/dist",
+        "skipWatch": false,
+        "options": {}
+      }
+    }
+  },
+  "tornado-deploy": {
+    "tasks": {
+      "build": {
+        "runner": "npx",
+        "input": "{{projectDir}}/src",
+        "output": "{{projectDir}}/dist",
+        "skipWatch": false,
+        "options": {}
+      }
+    },
+    "tornado-deploy": {
+      "tasks": {
+        "build": {
+          "runner": "npx",
+          "input": "{{projectDir}}/src",
+          "output": "{{projectDir}}/dist",
+          "skipWatch": false,
+          "options": {}
+        }
+      }
+    },
+    "trees-proposal": {
+      "tasks": {
+        "build": {
+          "runner": "npx",
+          "input": "{{projectDir}}/src",
+          "output": "{{projectDir}}/dist",
+          "skipWatch": false,
+          "options": {}
+        }
+      }
+    }
+  }
 }
