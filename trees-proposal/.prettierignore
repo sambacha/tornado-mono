@@ -1,0 +1,9 @@
+.vscode
+artifacts
+cache
+circuits
+contracts/verifiers
+test/abis
+snarks
+test/events
+proofsCache
