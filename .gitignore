@@ -10,3 +10,4 @@ build
 circuits/*.json
 circuits/*.bin
 .env
+!packages/trees-proposal/snarks/*
