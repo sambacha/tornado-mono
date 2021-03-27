@@ -1,0 +1,56 @@
+{
+  "name": "tornado-trees",
+  "version": "0.0.11",
+  "main": "src/index.js",
+  "repository": "https://github.com/tornadocash/tornado-trees.git",
+  "author": "Tornadocash team <hello@tornado.cash>",
+  "license": "MIT",
+  "files": [
+    "src/*",
+    "contracts/*",
+    "scripts/*"
+  ],
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "eslint": "eslint --ext .js --ignore-path .gitignore .",
+    "prettier:check": "prettier --check . --config .prettierrc",
+    "prettier:fix": "prettier --write . --config .prettierrc",
+    "lint": "yarn eslint && yarn prettier:check",
+    "changeTreeHeight": "scripts/changeTreeHeight.sh",
+    "circuit:batchTreeUpdate": "scripts/buildCircuit.sh BatchTreeUpdate",
+    "circuit:batchTreeUpdateLarge": "scripts/buildCircuit.sh BatchTreeUpdate large",
+    "circuit:batchTreeUpdateWitness": "scripts/buildWitness.sh BatchTreeUpdate",
+    "circuit": "yarn circuit:batchTreeUpdate"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "ethereum-waffle": "^3.2.2",
+    "ethers": "^5.0.26",
+    "hardhat": "^2.0.8",
+    "prettier": "^2.2.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.3",
+    "solhint-plugin-prettier": "^0.0.5",
+    "torn-token": "^1.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.0",
+    "@openzeppelin/upgrades-core": "^1.5.1",
+    "circom": "0.5.42",
+    "circom_runtime": "^0.1.12",
+    "circomlib": "git+https://github.com/tornadocash/circomlib.git#d20d53411d1bef61f38c99a8b36d5d0cc4836aa1",
+    "dotenv": "^8.2.0",
+    "ffiasm": "^0.1.1",
+    "ffjavascript": "^0.2.35",
+    "fixed-merkle-tree": "^0.5.0",
+    "jssha": "^3.2.0",
+    "snarkjs": "^0.3.57",
+    "tmp-promise": "^3.0.2"
+  }
+}

@@ -1,0 +1,1 @@
+../../artifacts/circuits/BatchTreeUpdateVerifier.sol
