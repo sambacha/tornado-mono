@@ -1,0 +1,19 @@
+*.html
+*.css
+*.scss
+**/artifacts/
+**/abi/
+dist/**
+build/**
+artifacts/
+build/
+cache/
+coverage/
+dist/
+lib/
+node_modules/
+typechain/
+
+# files
+.solcover.js
+coverage.json

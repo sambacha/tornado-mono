@@ -1,0 +1,7 @@
+*.html
+*.css
+*.scss
+**/artifacts/
+**/abi/
+dist/**
+build/**
