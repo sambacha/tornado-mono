@@ -44,7 +44,7 @@
     "@openzeppelin/upgrades-core": "^1.5.1",
     "circom": "0.5.42",
     "circom_runtime": "^0.1.12",
-    "circomlib": "git+https://github.com/tornadocash/circomlib.git#d20d53411d1bef61f38c99a8b36d5d0cc4836aa1",
+    "circomlib": "git+https://github.com/tornadocash/circomlib.git#3b492f9801573eebcfe1b6c584afe8a3beecf2b4",
     "dotenv": "^8.2.0",
     "ffiasm": "^0.1.1",
     "ffjavascript": "^0.2.35",
