@@ -15,7 +15,7 @@
     "cron": "^1.8.2",
     "dotenv": "^8.2.0",
     "eth-ens-namehash": "^2.0.8",
-    "fixed-merkle-tree": "^0.3.4",
+    "fixed-merkle-tree": "^0.5.0",
     "ioredis": "^4.17.3",
     "snarkjs": "git+https://github.com/tornadocash/snarkjs.git#869181cfaf7526fe8972073d31655493a04326d5",
     "torn-token": "^1.0.0",
