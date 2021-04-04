@@ -40,7 +40,7 @@
     "torn-token": "^1.0.0"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^3.4.0",
+    "@openzeppelin/contracts": "^4.0.0",
     "@openzeppelin/upgrades-core": "^1.5.1",
     "circom": "0.5.42",
     "circom_runtime": "^0.1.12",
