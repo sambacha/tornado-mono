@@ -49,7 +49,7 @@
   "dependencies": {
     "circomlib": "git+https://github.com/tornadocash/circomlib.git#3b492f9801573eebcfe1b6c584afe8a3beecf2b4",
     "decimal.js": "^10.2.0",
-    "eth-sig-util": "^2.5.3",
+    "eth-sig-util": "^3.0.0",
     "fixed-merkle-tree": "^0.3.4",
     "snarkjs": "git+https://github.com/tornadocash/snarkjs.git#869181cfaf7526fe8972073d31655493a04326d5",
     "tornado-trees": "^0.0.11",
