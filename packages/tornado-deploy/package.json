@@ -29,8 +29,8 @@
     "get-value": "^3.0.1"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.12.1",
-    "prettier": "^2.1.2"
+    "babel-eslint": "10.1.0",
+    "eslint": "7.12.1",
+    "prettier": "2.1.2"
   }
 }

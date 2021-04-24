@@ -10,7 +10,7 @@
   "author": "sam",
   "license": "ISC",
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "4.0.0"
   },
   "dependencies": {
     "@garment/cli": "^0.15.4"
