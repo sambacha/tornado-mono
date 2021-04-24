@@ -24,7 +24,7 @@
     "circuit": "yarn circuit:batchTreeUpdate"
   },
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.0.1",
+    "@nomiclabs/hardhat-ethers": "2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "babel-eslint": "^10.1.0",
     "chai": "^4.2.0",
