@@ -31,7 +31,7 @@
     "bn-chai": "^1.0.1",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "circom": "0.0.35",
+    "circom": "0.5.45",
     "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
